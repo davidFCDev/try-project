@@ -18,11 +18,11 @@ const Nav = () => {
         <Link to={"/timetable"} className="link underline-hover">
           Horarios
         </Link>
-        <Link to={""} className="link underline-hover">
+        <Link to={"/prices"} className="link underline-hover">
           Tarifas
         </Link>
         <Link
-          to={""}
+          to={"/contact"}
           className="font-creatoBold border border-black text-black hover:bg-black hover:text-white px-3 py-2 transition-all"
         >
           Contacto
