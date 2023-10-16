@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "./slider.css";
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
@@ -21,7 +22,7 @@ const SliderArenal = () => {
           clickable: true,
         }}
         modules={[EffectFade, Navigation, Pagination]}
-        className="h-[550px]"
+        className="h-[500px]"
       >
         <SwiperSlide>
           <img src="/public/images/zenter1.webp" alt="imagen zenter1" />

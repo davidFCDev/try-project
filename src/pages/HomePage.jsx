@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Centers from "../components/Centers";
+import Class from "../components/Class";
 import Hero from "../components/Hero";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Centers />
+      <Class />
     </div>
   );
 };
