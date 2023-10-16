@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import TimetablePage from "./pages/TimetablePage.jsx";
 import "./fonts.css";
 import "./index.css";
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/timetable",
+    element: <TimetablePage />,
   },
 ]);
 

@@ -1,0 +1,7 @@
+.screen {
+  background-image: url("/images/fondo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1
+}
