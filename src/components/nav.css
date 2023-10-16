@@ -1,0 +1,12 @@
+.underline-hover::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background-color: black;
+  display: block;
+  transition: all 350ms;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
