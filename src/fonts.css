@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Creato Display Black';
+  src: url('/fonts/CreatoDisplay-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Bold';
+  src: url('/fonts/CreatoDisplay-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Light';
+  src: url('/fonts/CreatoDisplay-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Regular';
+  src: url('/fonts/CreatoDisplay-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Thin';
+  src: url('/fonts/CreatoDisplay-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Extra Bold';
+  src: url('/fonts/CreatoDisplay-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Creato Display Regular Italic';
+  src: url('/fonts/CreatoDisplay-RegularItalic.otf') format('opentype');
+}
