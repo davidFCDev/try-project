@@ -3,7 +3,7 @@ import SliderZenter from "./SliderZenter";
 
 const Centers = () => {
   return (
-    <div id="centros" className="w-full flex flex-col border-t-2 border-black gap-10">
+    <div id="centros" className="w-full flex flex-col gap-10">
       <div className="flex items-center gap-16 bg-black text-white">
         <SliderArenal />
 

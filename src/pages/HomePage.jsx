@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Centers from "../components/Centers";
 import Class from "../components/Class";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <About />
       <Centers />
       <Class />
+      <Footer />
     </div>
   );
 };
