@@ -3,7 +3,7 @@ import "./nav.css";
 
 const Nav = () => {
   return (
-    <nav className="w-full px-20 py-5 flex justify-between items-center bg-white fixed">
+    <nav className="w-full px-20 py-5 flex justify-between items-center bg-white fixed shadow-md">
       <h1 className="text-3xl font-creatoLight tracking-[8px]">
         <strong className="font-creatoMedium">
           <span className="text-red-600">T</span>RY
