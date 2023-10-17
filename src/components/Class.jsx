@@ -1,14 +1,23 @@
+import { Link } from "react-router-dom";
+
 const Class = () => {
   return (
-    <div className="w-full py-32 flex flex-col gap-20">
-      <div className="flex flex-col gap-2 w-[40%] px-20">
+    <div className="w-full py-32 flex flex-col gap-32">
+      <div className="flex flex-col gap-4 w-[40%] px-20 items-start">
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
           Nuestras clases
         </h2>
         <p className="font-creatoLight text-2xl">
           Amplia variedad de clases que podrás disfrutar en nuestros centros
         </p>
+        <Link
+          to={"/contact"}
+          className="font-creatoBold border border-black text-white bg-black hover:bg-white hover:text-black px-3 py-2 transition-all"
+        >
+          Ver horarios
+        </Link>
       </div>
+
       <div className="flex flex-col w-full justify-around">
         <div className="flex gap-4 py-2">
           <img
@@ -23,6 +32,9 @@ const Class = () => {
             <p className="text-xl font-creato">
               Workout of the Day, para los más exigentes
             </p>
+            <a href="#" className="font-creatoLight text-lg underline-hover">
+              + Saber más
+            </a>
           </div>
         </div>
 
@@ -39,6 +51,9 @@ const Class = () => {
             <p className="text-xl font-creato">
               Si te gusta sudar, lo vas a pasar bien
             </p>
+            <a href="#" className="font-creatoLight text-lg underline-hover">
+              + Saber más
+            </a>
           </div>
         </div>
 
@@ -55,6 +70,9 @@ const Class = () => {
             <p className="text-xl font-creato">
               Clases específicas de 45 minutos
             </p>
+            <a href="#" className="font-creatoLight text-lg underline-hover">
+              + Saber más
+            </a>
           </div>
         </div>
 
@@ -71,6 +89,9 @@ const Class = () => {
             <p className="text-xl font-creato">
               Clase de telas aéreas, para los más atrevidos
             </p>
+            <a href="#" className="font-creatoLight text-lg underline-hover">
+              + Saber más
+            </a>
           </div>
         </div>
 
@@ -87,6 +108,9 @@ const Class = () => {
             <p className="text-xl font-creato">
               Ven por libre y decide tú mismo
             </p>
+            <a href="#" className="font-creatoLight text-lg underline-hover">
+              + Saber más
+            </a>
           </div>
         </div>
       </div>
