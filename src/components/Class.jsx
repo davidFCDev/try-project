@@ -46,9 +46,9 @@ const Class = () => {
               className="w-full h-[200px] object-cover object-center transform hover:scale-110 transition-all duration-1000"
             />
           </div>
-          <div className="flex flex-col items-start justify-center gap-5 px-5">
+          <div className="flex flex-col items-start justify-center gap-5 px-8">
             <h3 className="text-4xl uppercase font-creatoExtrBold tracking-wider">
-              Wod
+              <span className="text-red-600">W</span>od
             </h3>
             <p className="text-xl font-creato">
               Workout of the Day, para los más exigentes
@@ -72,15 +72,20 @@ const Class = () => {
               className="w-full h-[200px] object-cover object-center transform hover:scale-110 transition-all duration-1000"
             />
           </div>
-          <div className="flex flex-col items-end text-right justify-center gap-5 px-5">
+          <div className="flex flex-col items-start justify-center gap-5 px-8">
             <h3 className="text-4xl uppercase font-creatoExtrBold tracking-wider">
-              Endurance
+              Endura<span className="text-red-600">n</span>ce
             </h3>
             <p className="text-xl font-creato">
               Si te gusta sudar, lo vas a pasar bien
             </p>
-            <a href="#" className="font-creatoLight text-lg underline-hover">
-              + Saber más
+            <a href="#" className="font-creatoLight text-lg">
+              <button className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Saber más</span>
+              </button>
             </a>
           </div>
         </div>
@@ -93,15 +98,20 @@ const Class = () => {
               className="w-full h-[200px] object-cover object-center transform hover:scale-110 transition-all duration-1000"
             />
           </div>
-          <div className="flex flex-col items-start justify-center gap-5 px-5">
+          <div className="flex flex-col items-start justify-center gap-5 px-8">
             <h3 className="text-4xl uppercase font-creatoExtrBold tracking-wider">
-              TRY45
+              TRY4<span className="text-red-600">5</span>
             </h3>
             <p className="text-xl font-creato">
               Clases específicas de 45 minutos
             </p>
-            <a href="#" className="font-creatoLight text-lg underline-hover">
-              + Saber más
+            <a href="#" className="font-creatoLight text-lg">
+              <button className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Saber más</span>
+              </button>
             </a>
           </div>
         </div>
@@ -114,15 +124,20 @@ const Class = () => {
               className="w-full h-[200px] object-cover object-center transform hover:scale-110 transition-all duration-1000"
             />
           </div>
-          <div className="flex flex-col items-end text-right justify-center gap-5 px-5">
+          <div className="flex flex-col items-start justify-center gap-5 px-8">
             <h3 className="text-4xl uppercase font-creatoExtrBold tracking-wider">
-              AERIAL
+              A<span className="text-red-600">e</span>RIAL
             </h3>
             <p className="text-xl font-creato">
               Clase de telas aéreas, para los más atrevidos
             </p>
-            <a href="#" className="font-creatoLight text-lg underline-hover">
-              + Saber más
+            <a href="#" className="font-creatoLight text-lg">
+              <button className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Saber más</span>
+              </button>
             </a>
           </div>
         </div>
@@ -135,15 +150,20 @@ const Class = () => {
               className="w-full h-[200px] object-cover object-bottom transform hover:scale-110 transition-all duration-1000"
             />
           </div>
-          <div className="flex flex-col items-start justify-center gap-5 px-5">
+          <div className="flex flex-col items-start justify-center gap-5 px-8">
             <h3 className="text-4xl uppercase font-creatoExtrBold tracking-wider">
-              OPEN BOX
+              OPEN <span className="text-red-600">b</span>OX
             </h3>
             <p className="text-xl font-creato">
               Ven por libre y decide tú mismo
             </p>
-            <a href="#" className="font-creatoLight text-lg underline-hover">
-              + Saber más
+            <a href="#" className="font-creatoLight text-lg">
+              <button className="learn-more">
+                <span className="circle" aria-hidden="true">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Saber más</span>
+              </button>
             </a>
           </div>
         </div>
