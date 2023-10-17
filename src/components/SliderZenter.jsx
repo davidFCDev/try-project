@@ -35,7 +35,7 @@ const SliderArenal = () => {
           clickable: true,
         }}
         modules={[EffectFade, Navigation, Pagination]}
-        className="h-[500px]"
+        className="h-[500px] overflow-x-hidden"
       >
         <SwiperSlide>
           <img src="/images/zenter1.webp" alt="imagen zenter1" />

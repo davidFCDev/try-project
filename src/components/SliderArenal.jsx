@@ -26,7 +26,7 @@ const SliderArenal = () => {
     <motion.div
       initial={{ x: -500, opacity: 0 }}
       animate={inView ? animationOptions : { }}
-      className="w-[60%]"
+      className="w-[60%] overflow-x-hidden"
       ref={ref}
     >
       <Swiper
