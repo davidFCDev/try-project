@@ -21,6 +21,18 @@ const Nav = () => {
         <Link to={"/prices"} className="link underline-hover">
           Tarifas
         </Link>
+        <a
+          href="https://www.instagram.com/tryfitness._/"
+          target="_blank"
+          rel="noreferrer"
+          className=""
+        >
+          <img
+            src="/public/images/iconoIg.png"
+            alt="icono instagram"
+            className="w-7 hover:scale-105"
+          />
+        </a>
         <Link
           to={"/contact"}
           className="font-creatoBold border border-black text-black hover:bg-black hover:text-white px-3 py-2 transition-all"
