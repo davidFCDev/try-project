@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const animationOptions = {
@@ -6,12 +7,16 @@ const About = () => {
     y: 0,
     transition: { duration: 1.2 },
   };
+
+  const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
+
   return (
     <div className="w-full flex flex-col justify-center items-center py-32">
       <motion.div
-        animate={animationOptions}
+        animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
         className=" mx-[27%] flex flex-col gap-5"
+        ref={ref}
       >
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
           Descubre nuestros dos centros en Vigo
