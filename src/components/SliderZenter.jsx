@@ -1,5 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,8 +14,19 @@ import "./slider.css";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 const SliderArenal = () => {
+  const animationOptions = {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 1 },
+  };
+
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
+
   return (
-    <div className="w-[60%]">
+    <motion.div initial={{ x: 500, opacity: 0 }}
+    animate={inView ? animationOptions : { }}
+    className="w-[60%]"
+    ref={ref}>
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -34,7 +47,7 @@ const SliderArenal = () => {
           <img src="/public/images/zenter3.webp" alt="imagen zenter3" />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

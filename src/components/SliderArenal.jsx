@@ -17,7 +17,7 @@ const SliderArenal = () => {
   const animationOptions = {
     x: 0,
     opacity: 1,
-    transition: { duration: 1.2 },
+    transition: { duration: 1 },
   };
 
   const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });

@@ -7,11 +7,11 @@ const Centers = () => {
   const animationOptions = {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5 },
+    transition: { duration: 1 },
   };
 
-  const [ref1, inView1] = useInView({ threshold: 0.7, triggerOnce: true });
-  const [ref2, inView2] = useInView({ threshold: 0.7, triggerOnce: true });
+  const [ref1, inView1] = useInView({ threshold: 0.4, triggerOnce: true });
+  const [ref2, inView2] = useInView({ threshold: 0.4, triggerOnce: true });
 
   return (
     <div id="centros" className="w-full flex flex-col gap-10">
@@ -19,7 +19,7 @@ const Centers = () => {
         <SliderArenal />
 
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 200 }}
           animate={inView1 ? animationOptions : {}}
           className="flex flex-col gap-6 max-w-[30%]"
           ref={ref1}
@@ -42,7 +42,7 @@ const Centers = () => {
 
         <motion.div
           className="flex flex-col gap-5 max-w-[30%]"
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -200 }}
           animate={inView2 ? animationOptions : {}}
           ref={ref2}
         >
