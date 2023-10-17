@@ -28,7 +28,7 @@ const Nav = () => {
           className=""
         >
           <img
-            src="/public/images/iconoIg.png"
+            src="/images/iconoIg.png"
             alt="icono instagram"
             className="w-7 hover:scale-105"
           />

@@ -15,11 +15,11 @@ const Class = () => {
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
 
   return (
-    <div className="w-full flex flex-col gap-32 bg-red-200">
+    <div className="w-full flex flex-col gap-32">
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className="flex flex-col gap-4 w-[40%] items-start bg-red-100"
+        className="flex flex-col gap-5 w-[40%] items-start px-20"
         ref={ref}
       >
         <h2 className="font-creatoExtrBold text-6xl uppercase tracking-wider">
@@ -37,7 +37,7 @@ const Class = () => {
         </Link>
       </motion.div>
 
-      <div className="flex flex-col py-20 gap-10 w-full justify-around">
+      <div className="flex flex-col py-16 gap-10 w-full justify-around">
         {CLASS.map((item) => (
           <ClassItem key={item.id} item={item} />
         ))}
