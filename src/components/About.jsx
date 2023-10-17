@@ -11,7 +11,7 @@ const About = () => {
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
 
   return (
-    <div className="w-full flex flex-col py-32 justify-center items-center">
+    <div className="w-full flex flex-col pt-32 pb-16 justify-center items-center">
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}

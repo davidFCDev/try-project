@@ -10,7 +10,7 @@ const FreeClass = () => {
 
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
   return (
-    <div className="w-full flex flex-col pb-32 pt-10 justify-center items-start">
+    <div className="w-full flex flex-col pt-16 pb-32 justify-center items-start">
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}

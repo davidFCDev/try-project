@@ -12,9 +12,9 @@ const Nav = () => {
       </Link>
 
       <div className="flex gap-10 uppercase text-[13px] tracking-[6px] font-creato items-center">
-        <a href="#centros" className="link underline-hover">
-          Centros
-        </a>
+        <Link to={"/"} className="link underline-hover">
+          Inicio
+        </Link>
         <Link to={"/timetable"} className="link underline-hover">
           Horarios
         </Link>

@@ -14,7 +14,7 @@ const Centers = () => {
   const [ref2, inView2] = useInView({ threshold: 0.4, triggerOnce: true });
 
   return (
-    <div id="centros" className="w-full flex flex-col gap-10">
+    <div id="centros" className="w-full flex flex-col gap-10 py-16">
       <div className="flex items-center gap-16 bg-black text-white">
         <SliderArenal />
 
