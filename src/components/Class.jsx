@@ -8,7 +8,7 @@ const Class = () => {
           Nuestras clases
         </h2>
         <p className="font-creatoLight text-2xl">
-          Amplia variedad de clases que podrás disfrutar en nuestros centros
+          Amplia variedad de clases que podrás disfrutar en nuestros centros. Descubre la que mas se adapta a ti.
         </p>
         <Link
           to={"/contact"}

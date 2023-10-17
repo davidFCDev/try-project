@@ -38,13 +38,13 @@ const SliderArenal = () => {
         className="h-[500px]"
       >
         <SwiperSlide>
-          <img src="/public/images/zenter1.webp" alt="imagen zenter1" />
+          <img src="/images/zenter1.webp" alt="imagen zenter1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/images/zenter2.webp" alt="imagen zenter2" />
+          <img src="/images/zenter2.webp" alt="imagen zenter2" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/public/images/zenter3.webp" alt="imagen zenter3" />
+          <img src="/images/zenter3.webp" alt="imagen zenter3" />
         </SwiperSlide>
       </Swiper>
     </motion.div>

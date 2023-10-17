@@ -11,11 +11,11 @@ const About = () => {
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-32">
+    <div className="w-full flex flex-col py-32 px-20">
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className=" mx-[27%] flex flex-col gap-5"
+        className="w-[45%] flex flex-col gap-5"
         ref={ref}
       >
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
