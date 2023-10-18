@@ -5,9 +5,10 @@ import App from "./App.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import TimetablePage from "./pages/TimetablePage.jsx";
 import PricesPage from "./pages/PricesPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import ClassPage from "./pages/ClassPage.jsx";
 import "./fonts.css";
 import "./index.css";
-import ContactPage from "./pages/ContactPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/class:id",
-        
+        element: <ClassPage />, 
       }
     ],
   },

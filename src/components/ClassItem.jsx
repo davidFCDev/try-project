@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ClassItem = ({ item }) => {
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
@@ -32,14 +33,14 @@ const ClassItem = ({ item }) => {
           {item.title.end}
         </h3>
         <p className="text-xl font-creato tracking-wide">{item.subtitle}</p>
-        <a href="#" className="font-creatoLight text-lg">
+        <Link to={"/class:id"} className="font-creatoLight text-lg">
           <button className="learn-more">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
             <span className="button-text">Saber más</span>
           </button>
-        </a>
+        </Link>
       </motion.div>
     </div>
   );

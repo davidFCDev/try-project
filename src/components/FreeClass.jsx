@@ -20,8 +20,16 @@ const FreeClass = () => {
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
           Tu primera clase es gratis
         </h2>
-        <p className="font-creatoLight text-2xl">
-          Contacta con nosotros y ven a probar!
+        <p className="font-creatoLight text-2xl flex items-center">
+          Contacta con nosotros y ven a
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-2 font-creatoMedium underline-hover"
+          >
+            probar
+          </a>
         </p>
       </motion.div>
     </div>
