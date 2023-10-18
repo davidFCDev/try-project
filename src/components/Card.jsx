@@ -10,7 +10,7 @@ const Card = ({ price }) => {
       <p className="desc font-creatoBold text-red-600 text-xl tracking-wide">{price.center}</p>
       <ul className="lists font-creatoLight text-lg">
         <li className="list">
-          <span>{price.description[0]}</span>
+          <span className="font-creato text-lg">{price.description[0]}</span>
         </li>
         <li className="list text-sm">
           <svg
