@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-gray-100 w-full py-16 flex flex-col gap-40 font-creatoLight tracking-wider ">
+    <footer className="bg-black text-gray-100 w-full pt-14 pb-10 flex flex-col gap-40 font-creatoLight tracking-wider ">
 		
       <ul className="flex justify-around">
         <li className="flex flex-col gap-3">
