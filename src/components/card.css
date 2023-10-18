@@ -1,0 +1,79 @@
+.card {
+  flex-grow: 1;
+  flex-basis: 200;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem 2.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+
+}
+
+.price {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-weight: 700;
+
+}
+
+.desc {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+
+}
+
+.lists {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+
+}
+
+.lists .list {
+  margin-bottom: 0.5rem;
+  display: flex;
+
+}
+
+.lists .list svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: #DC2626;
+}
+
+.action {
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: rgba(167, 139, 250, 1);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(17, 24, 39, 1);
+}

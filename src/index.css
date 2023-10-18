@@ -5,3 +5,19 @@
 body {
   overflow-x: hidden;
 }
+
+.screen {
+  background-image: url("/images/fondo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1
+}
+
+.screen-prices {
+  background-image: url("/images/fondoLuz.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1
+}
