@@ -16,7 +16,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-dark text-gray-100 w-full pt-14 pb-10 flex flex-col gap-40 font-creatoLight tracking-wider ">
-		
       <ul className="flex justify-around">
         <li className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
@@ -74,7 +73,7 @@ const Footer = () => {
             <BiLike className="text-md sm:text-xl" />
           </div>
           <a
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 hover:underline"
             href="https://www.instagram.com/tryfitness._/"
             target="_blank"
             onClick={(event) => {
@@ -90,7 +89,7 @@ const Footer = () => {
             <GrInstagram />
           </a>
           <a
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 hover:underline"
             href="https://www.facebook.com/tryfitnessboxzenter"
             target="_blank"
             onClick={(event) => {
@@ -120,6 +119,7 @@ const Footer = () => {
                   handleContactClick();
                 }
               }}
+              className="hover:underline"
             >
               <p>Aviso legal</p>
             </Link>
@@ -138,6 +138,7 @@ const Footer = () => {
                   handleContactClick();
                 }
               }}
+              className="hover:underline"
             >
               <p>Pol. de privacidad</p>
             </Link>
@@ -154,6 +155,7 @@ const Footer = () => {
                   handleContactClick();
                 }
               }}
+              className="hover:underline"
             >
               <p>Pol. de cookies</p>
             </Link>
@@ -163,7 +165,7 @@ const Footer = () => {
           <a
             target="_blank"
             href="https://personal-virtualfolio.netlify.app/#portfolio"
-            className="portfolio"
+            className="hover:text-white"
             rel="noreferrer"
           >
             developed by <span>davidFC</span>

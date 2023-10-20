@@ -26,7 +26,7 @@ const FreeClass = () => {
             href="#"
             target="_blank"
             rel="noreferrer"
-            className="ml-2 font-creatoMedium underline-hover"
+            className="ml-2 font-creatoMedium bg-black text-white px-2 py-1 rounded-md hover:bg-white hover:text-black transition duration-300 ease-in-out"
           >
             probar
           </a>

@@ -25,7 +25,7 @@ const Table = () => {
   return (
     <div className="w-full items-center justify-start flex flex-col gap-10 px-32">
       {loading ? (
-        <p className="text-white text-xl">Cargando...</p>
+        <p className="text-white text-xl">Cargando horarios...</p>
       ) : error ? (
         <p>{error}</p>
       ) : (

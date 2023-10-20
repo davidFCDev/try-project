@@ -1,7 +1,10 @@
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen bg-black py-32 justify-center flex">
-      <h1 className="text-white text-4xl">Contacto</h1>
+    <div className="w-full min-h-screen py-28 px-10 gap-10 justify-start flex flex-col items-center bg-dark">
+      <h2 className="font-creatoBold text-5xl uppercase tracking-wider text-white">
+        Contacto
+      </h2>
+
     </div>
   );
 };

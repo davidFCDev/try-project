@@ -27,12 +27,12 @@ const Centers = () => {
           <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wide">
             <span className="text-red-600">TRY</span> BOX ARENAL
           </h2>
-          <p className="text-lg font-creatoLight italic">
+          <p className="text-lg font-creatoThin italic">
             Rúa do Areal, 140, 36201 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creato">
-            Ven a disfrutar nuestras clases de WOD, Endurance o ven directamente
-            a Open Box y decide tú!
+          <p className="text-xl font-creatoLight tracking-wide">
+            Espacio en el interior del Gimnasio Arenal. WOD, dndurance o ven
+            directamente a Open Box y decide tú!
           </p>
         </motion.div>
       </div>
@@ -49,12 +49,12 @@ const Centers = () => {
           <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wide">
             <span className="text-red-600">TRY</span> ZENTER
           </h2>
-          <p className="text-lg font-creatoLight italic">
+          <p className="text-lg font-creatoThin italic">
             Estrada Fragosiño, 30, 36214 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creato">
-            Apúntate a nuestras clases de Try45, aereos y específicos para
-            pádel.
+          <p className="text-xl font-creatoLight tracking-wide">
+            Espacio en el interior de Twelve Center. Clases de Try45, aerial y
+            específicos para pádel.
           </p>
         </motion.div>
       </div>

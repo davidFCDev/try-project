@@ -19,18 +19,17 @@ const Class = () => {
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className="flex flex-col gap-5 w-[40%] items-start px-20"
+        className="flex flex-col gap-5 w-[35%] items-start px-20"
         ref={ref}
       >
         <h2 className="font-creatoExtrBold text-6xl uppercase tracking-wider">
           Nuestras clases
         </h2>
         <p className="font-creatoLight text-2xl">
-          Amplia variedad de clases que podrás disfrutar en nuestros centros.
-          Descubre la que más se adapta a ti.
+        Ya busques mejorar tu resistencia, desarrollar tu fuerza o perfeccionar tus habilidades gimnásticas, tenemos la clase perfecta para ti.
         </p>
         <Link
-          to="/contact"
+          to="/timetable"
           className="font-creatoExtrBold border border-black text-white bg-black hover:bg-white hover:text-black px-3 py-2 transition-all tracking-wider"
         >
           Ver horarios
