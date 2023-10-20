@@ -1,60 +1,47 @@
-import { useEffect, useState } from 'react';
-import { google } from 'googleapis';
-
-const auth = new google.auth.GoogleAuth({
-  keyFile: '/config/credentials-google-drive.json',
-  scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-});
-
-const sheets = google.sheets({ version: 'v4', auth });
-const spreadsheetId = '11HWLVJVE_vXw6a3jRDlMJWa1f-5_6BeEc90Hu9tm2bo';
+import { useEffect, useState } from "react";
+import { getTimetable } from "../services";
 
 const Table = () => {
-  const [data, setData] = useState([]);
+  const [timetable, setTimetable] = useState([]);
 
   useEffect(() => {
-    sheets.spreadsheets.values.get(
-      {
-        spreadsheetId,
-        range: 'Box!B3:H14',
-      },
-      (err, res) => {
-        if (err) {
-          console.log(`Error al acceder a los datos: ${err}`);
-        } else {
-          setData(res.data.values || []); // Almacenamos los datos en el estado
-        }
-      }
-    );
+    getTimetable().then((data) => {
+      setTimetable(data);
+      console.log(data);
+    });
   }, []);
 
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Columna 1</th>
-            <th>Columna 2</th>
-            <th>Columna 3</th>
-            <th>Columna 4</th>
-            <th>Columna 5</th>
-            <th>Columna 6</th>
-            <th>Columna 7</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {row.map((cell, cellIndex) => (
-                <td key={cellIndex}>{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="w-full min-h-screen items-center flex flex-col gap-10">
+      <h1 className="text-3xl font-creatoBold">Horarios</h1>
+      {timetable.length > 0 ? (
+        <table cellPadding={10} className="bg-gray-200" >
+          <tbody>
+            {timetable.map((item, index) => (
+              <tr key={index}>
+                <td className="font-creatoBold">{item[1]}</td>
+                <td>{item[2]}</td>
+                <td>{item[3]}</td>
+                <td>{item[4]}</td>
+                <td>{item[5]}</td>
+                <td>{item[6]}</td>
+                <td>{item[7]}</td>
+                <td>{item[8]}</td>
+                <td>{item[9]}</td>
+                <td>{item[10]}</td>
+                <td>{item[11]}</td>
+                <td>{item[12]}</td>
+
+                {/* Agrega más celdas para otras propiedades */}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p>Cargando...</p>
+      )}
     </div>
   );
 };
 
 export default Table;
-
