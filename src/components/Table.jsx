@@ -3,42 +3,60 @@ import { getTimetable } from "../services";
 
 const Table = () => {
   const [timetable, setTimetable] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    getTimetable().then((data) => {
-      setTimetable(data);
-      console.log(data);
-    });
+    getTimetable()
+      .then((data) => {
+        setTimetable(data);
+        console.log(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(
+          "Error al cargar el horario. Inténtalo de nuevo más tarde.",
+          error
+        );
+        setLoading(false);
+      });
   }, []);
 
   return (
-    <div className="w-full min-h-screen items-center flex flex-col gap-10">
-      <h1 className="text-3xl font-creatoBold">Horarios</h1>
-      {timetable.length > 0 ? (
-        <table cellPadding={10} className="bg-gray-200" >
-          <tbody>
-            {timetable.map((item, index) => (
-              <tr key={index}>
-                <td className="font-creatoBold">{item[1]}</td>
-                <td>{item[2]}</td>
-                <td>{item[3]}</td>
-                <td>{item[4]}</td>
-                <td>{item[5]}</td>
-                <td>{item[6]}</td>
-                <td>{item[7]}</td>
-                <td>{item[8]}</td>
-                <td>{item[9]}</td>
-                <td>{item[10]}</td>
-                <td>{item[11]}</td>
-                <td>{item[12]}</td>
-
-                {/* Agrega más celdas para otras propiedades */}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+    <div className="w-full items-center justify-start flex flex-col gap-10 px-32">
+      {loading ? (
+        <p className="text-white text-xl">Cargando...</p>
+      ) : error ? (
+        <p>{error}</p>
       ) : (
-        <p>Cargando...</p>
+        <div className="bg-gray-200 w-full shadow-md shadow-gray-600">
+          <table cellPadding={12} className="w-full">
+            <thead className="text-white bg-dark font-creatoBold border-white border">
+              <tr>
+                <th className="border border-white">Hora</th>
+                <th className="border border-white">Lunes</th>
+                <th className="border border-white">Martes</th>
+                <th className="border border-white">Miércoles</th>
+                <th className="border border-white">Jueves</th>
+                <th className="border border-white">Viernes</th>
+                <th className="border border-white">Sábado</th>
+              </tr>
+            </thead>
+            <tbody className="text-center">
+              {timetable.map((item, index) => (
+                <tr key={index} className="font-creatoBold">
+                  <td className="border border-dark">{item[1]}</td>
+                  <td className="border border-dark">{item[2]}</td>
+                  <td className="border border-dark">{item[3]}</td>
+                  <td className="border border-dark">{item[4]}</td>
+                  <td className="border border-dark">{item[5]}</td>
+                  <td className="border border-dark">{item[6]}</td>
+                  <td className="border border-dark">{item[7]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   );
