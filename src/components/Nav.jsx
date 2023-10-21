@@ -12,9 +12,9 @@ const Nav = () => {
   };
 
   return (
-    <nav className="w-full px-10 md:px-20 py-5 flex justify-between items-center bg-white fixed shadow-md z-50">
-      <Link className="text-xl md:text-3xl font-creatoLight tracking-[8px]">
-        <strong className="font-creatoMedium">
+    <nav className="w-full px-6 md:px-20 py-5 flex justify-between items-center bg-white fixed shadow-md z-50">
+      <Link className="text-2xl md:text-3xl font-creatoLight tracking-[4px] sm:tracking-[8px]">
+        <strong className="font-creatoBold">
           <span className="text-red-600">T</span>RY
         </strong>{" "}
         FITNESS
@@ -67,33 +67,32 @@ const Nav = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="p-6 bg-dimWhite shadow-sm shadow-gray3 absolute top-14 right-0 mx-4 my-1 min-w-[100px] rounded-lg sidebar font-rubik"
+              className="p-5 bg-dimWhite absolute top-[5.4rem] right-[0.8rem] min-w-[100px] rounded font-creatoBold uppercase"
             >
-              <ul className="list-none flex gap-2 justify-end items-start flex-1 flex-col tracking-wider">
-                <Link href="#" className="hover:text-orange text-xs sm:text-lg">
-                  Home
+              <ul className="list-none flex gap-2 justify-end items-start flex-1 flex-col tracking-widest text-sm">
+                <Link to={"/"} className="bg-dark text-white w-full text-center px-6 py-2">
+                  Inicio
                 </Link>
-                <Link
-                  href="#services"
-                  className="hover:text-orange text-xs sm:text-lg"
+                <Link to={"/timetable"} className="bg-dark text-white w-full text-center px-6 py-2">
+                  Horarios
+                </Link>
+                <Link to={"/prices"} className="bg-dark text-white w-full text-center px-6 py-2">
+                  Tarifas
+                </Link>
+                <a
+                  href="https://www.instagram.com/tryfitness._/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-dark text-white w-full text-center px-6 py-2"
                 >
-                  Services
-                </Link>
+                  Instagram
+                </a>
                 <Link
-                  href="#about"
-                  className="hover:text-orange text-xs sm:text-lg"
+                  to={"/contact"}
+                  className="bg-dark text-white w-full text-center px-6 py-2"
                 >
-                  About
+                  Contacto
                 </Link>
-                <Link href="#" className="hover:text-orange text-xs sm:text-lg">
-                  Resources
-                </Link>
-                <Link href="#" className="hover:text-orange text-xs sm:text-lg">
-                  Blog
-                </Link>
-                <button className="text-xs sm:text-lg text-orange active:text-black">
-                  Sign Up
-                </button>
               </ul>
             </motion.div>
           )}
