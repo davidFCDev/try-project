@@ -5,6 +5,64 @@ const ContactPage = () => {
         Contacto
       </h2>
 
+      <form className="w-full max-w-lg shadow-sm shadow-white p-10 bg-white rounded-sm">
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full px-3">
+            <label
+              className="block uppercase text-md font-bold mb-2 font-creatoExtrBold tracking-widest"
+              htmlFor="grid-first-name"
+            >
+              Nombre
+            </label>
+            <input
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 bg-gray-100"
+              id="grid-first-name"
+              type="text"
+              placeholder="Nombre"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full px-3">
+            <label
+              className="block uppercase text-md font-bold mb-2 font-creatoExtrBold tracking-widest"
+              htmlFor="grid-password"
+            >
+              E-mail
+            </label>
+            <input
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 bg-gray-100"
+              id="grid-password"
+              type="email"
+              placeholder="E-mail"
+            />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-2">
+          <div className="w-full px-3">
+            <label
+              className="block uppercase text-md font-bold mb-2 font-creatoExtrBold tracking-widest"
+              htmlFor="grid-password"
+            >
+              Mensaje
+            </label>
+            <textarea
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200 bg-gray-100"
+              id="grid-password"
+              type="text"
+              placeholder="Mensaje"
+            />
+
+            <button
+              type="submit"
+              className="bg-black font-creatoBold text-xl w-full font-bold py-2 px-4 text-white hover:bg-dark transition-all "
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   );
 };
