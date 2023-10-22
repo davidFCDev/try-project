@@ -30,28 +30,28 @@ const Table = () => {
         <p>{error}</p>
       ) : (
         <div className="bg-gray-200 w-full shadow-md shadow-gray-600">
-          <table cellPadding={12} className="w-full">
-            <thead className="text-white bg-dark font-creatoBold border-white border">
+          <table cellPadding={12} className="w-full border-separate">
+            <thead className="text-white bg-dark font-creatoBold border">
               <tr>
-                <th className="border border-white">Hora</th>
-                <th className="border border-white">Lunes</th>
-                <th className="border border-white">Martes</th>
-                <th className="border border-white">Miércoles</th>
-                <th className="border border-white">Jueves</th>
-                <th className="border border-white">Viernes</th>
-                <th className="border border-white">Sábado</th>
+                <th className="border">Hora</th>
+                <th className="border">Lunes</th>
+                <th className="border">Martes</th>
+                <th className="border">Miércoles</th>
+                <th className="border">Jueves</th>
+                <th className="border">Viernes</th>
+                <th className="border">Sábado</th>
               </tr>
             </thead>
             <tbody className="text-center">
               {timetable.map((item, index) => (
                 <tr key={index} className="font-creatoBold">
-                  <td className="border border-dark">{item[1]}</td>
-                  <td className="border border-dark">{item[2]}</td>
-                  <td className="border border-dark">{item[3]}</td>
-                  <td className="border border-dark">{item[4]}</td>
-                  <td className="border border-dark">{item[5]}</td>
-                  <td className="border border-dark">{item[6]}</td>
-                  <td className="border border-dark">{item[7]}</td>
+                  <td className="border border-slate-400">{item[1]}</td>
+                  <td className="border border-slate-400">{item[2]}</td>
+                  <td className="border border-slate-400">{item[3]}</td>
+                  <td className="border border-slate-400">{item[4]}</td>
+                  <td className="border border-slate-400">{item[5]}</td>
+                  <td className="border border-slate-400">{item[6]}</td>
+                  <td className="border border-slate-400">{item[7]}</td>
                 </tr>
               ))}
             </tbody>
