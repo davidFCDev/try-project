@@ -17,19 +17,19 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/timetable",
+        path: "timetable",
         element: <TimetablePage />,
       },
       {
-        path: "/prices",
+        path: "prices",
         element: <PricesPage />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <ContactPage />,
       },
       {
-        path: "/class:id",
+        path: "class/:id",
         element: <ClassPage />, 
       }
     ],

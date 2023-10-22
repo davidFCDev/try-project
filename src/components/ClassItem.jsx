@@ -33,7 +33,7 @@ const ClassItem = ({ item }) => {
           {item.title.end}
         </h3>
         <p className="text-xl font-creatoLight tracking-wide">{item.subtitle}</p>
-        <Link to={"/class:id"} className="font-creatoLight text-lg">
+        <Link to={`class/${item.id}`} className="font-creatoLight text-lg">
           <button className="learn-more">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
