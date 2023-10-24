@@ -30,7 +30,7 @@
 
 /** Saber mas **/
 
-button {
+.special-button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -44,12 +44,12 @@ button {
   font-family: inherit;
 }
 
-button.learn-more {
+.special-button.learn-more {
   width: 10rem;
   height: auto;
 }
 
-button.learn-more .circle {
+.special-button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -60,7 +60,7 @@ button.learn-more .circle {
   border-radius: 1.625rem;
 }
 
-button.learn-more .circle .icon {
+.special-button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -69,7 +69,7 @@ button.learn-more .circle .icon {
   background: #fff;
 }
 
-button.learn-more .circle .icon.arrow {
+.special-button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.225rem;
   width: 1.025rem;
@@ -77,7 +77,7 @@ button.learn-more .circle .icon.arrow {
   background: none;
 }
 
-button.learn-more .circle .icon.arrow::before {
+.special-button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -89,7 +89,7 @@ button.learn-more .circle .icon.arrow::before {
   transform: rotate(45deg);
 }
 
-button.learn-more .button-text {
+.special-button.learn-more .special-button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -105,15 +105,15 @@ button.learn-more .button-text {
 
 }
 
-button:hover .circle {
+.special-button:hover .circle {
   width: 100%;
 }
 
-button:hover .circle .icon.arrow {
+.special-button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
 
-button:hover .button-text {
+.special-button:hover .special-button-text {
   color: #fff;
 }

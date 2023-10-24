@@ -14,3 +14,11 @@ body {
   opacity: 1;
 }
 
+.screen-contact {
+  background-image: url("/images/fondoLuz.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+

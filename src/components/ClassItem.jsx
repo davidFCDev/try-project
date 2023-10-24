@@ -34,11 +34,11 @@ const ClassItem = ({ item }) => {
         </h3>
         <p className="text-xl font-creatoLight tracking-wider">{item.subtitle}</p>
         <Link to={`class/${item.id}`} className="font-creatoLight text-lg">
-          <button className="learn-more">
+          <button className="learn-more special-button">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
-            <span className="button-text">Saber más</span>
+            <span className="special-button-text">Saber más</span>
           </button>
         </Link>
       </motion.div>
