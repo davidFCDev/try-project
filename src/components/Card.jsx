@@ -5,9 +5,15 @@ const Card = ({ price }) => {
     <div className="card">
       <div className="header">
         <span className="card-price font-creatoBold">{price.price}</span>
-        <span className="card-title font-creatoExtrBold tracking-wider">{price.title}</span>
+        <span className="card-title font-creatoExtrBold tracking-wider">
+          {price.title}
+        </span>
       </div>
-      <p className="desc font-creatoBold text-red-600 text-xl tracking-wide">
+      <p
+        className={`desc font-creatoBold text-xl tracking-wide ${
+          price.center === "TRY Fitness Box" ? "text-red-500" : "text-blue-500"
+        }`}
+      >
         {price.center}
       </p>
       <ul className="lists font-creatoLight text-base">
@@ -15,7 +21,9 @@ const Card = ({ price }) => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
-            fill="currentColor"
+            fill={`${
+              price.center === "TRY Fitness Box" ? "#EF4444" : "#3B82F6"
+            }`}
           >
             <path
               fillRule="evenodd"
@@ -29,7 +37,9 @@ const Card = ({ price }) => {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
-            fill="currentColor"
+            fill={`${
+              price.center === "TRY Fitness Box" ? "#EF4444" : "#3B82F6"
+            }`}
           >
             <path
               fillRule="evenodd"
@@ -44,7 +54,9 @@ const Card = ({ price }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              fill="currentColor"
+              fill={`${
+              price.center === "TRY Fitness Box" ? "#EF4444" : "#3B82F6"
+            }`}
             >
               <path
                 fillRule="evenodd"

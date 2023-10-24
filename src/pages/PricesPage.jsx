@@ -3,7 +3,7 @@ import { PRICES } from "../constants/prices";
 
 const PricesPage = () => {
   return (
-    <div className="w-full min-h-screen py-28 px-10 gap-10 justify-center flex flex-col items-center bg-dark">
+    <div className="w-full min-h-screen py-28 px-10 gap-10 justify-center flex flex-col items-center screen-contact">
       <h2 className="font-creatoExtrBold text-5xl uppercase tracking-wider text-white">
         Nuestras tarifas
       </h2>
