@@ -14,25 +14,27 @@ const ClassPage = () => {
   console.log(selectedClass);
 
   return (
-    <div className="w-full min-h-screen py-32 gap-10 justify-end flex items-center bg-dark text-white">
-      <div className="flex flex-col gap-10 w-[40%]">
-        <h2 className="font-creatoBold text-7xl uppercase tracking-wider ">
+    <div className="w-full min-h-screen pt-16 justify-center flex text-white">
+      <div className="flex flex-col justify-center items-start px-14 gap-10 w-[55%] bg-black">
+        <h2 className="title font-creatoExtrBold text-6xl uppercase tracking-wider bg-red-600 px-2 py-1">
           {selectedClass.title.first}
           {selectedClass.title.red}
           {selectedClass.title.end}
         </h2>
         <div className="flex flex-col gap-5">
-          <h3 className="font-creatoBold text-4xl">{selectedClass.subtitle}</h3>
-          <p className="font font-creatoLight text-xl">
+          <h3 className="font-creatoBold text-2xl">{selectedClass.subtitle}</h3>
+          <p className="font font-creatoLight text-xl italic">
             {selectedClass.description}
           </p>
         </div>
       </div>
-      <img
-        src={selectedClass.image}
-        alt="image from class"
-        className="w-[50%] rounded-md"
-      />
+      <div>
+        <img
+          src={selectedClass.image}
+          alt="image from class"
+          className="w-full h-full object-center object-cover"
+        />
+      </div>
     </div>
   );
 };
