@@ -1,6 +1,6 @@
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen py-28 px-10 gap-12 justify-center flex flex-col items-center screen-contact text-white">
+    <div className="w-full min-h-screen py-28 px-10 gap-12 justify-center flex flex-col items-center bg-dark text-white">
       <div className="flex flex-col gap-4 w-[36%]">
         <h2 className="font-creatoExtrBold text-5xl uppercase tracking-wider ">
           Contacto
@@ -21,7 +21,7 @@ const ContactPage = () => {
               Nombre
             </label>
             <input
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent outline-none"
               id="grid-first-name"
               type="text"
               placeholder=""
@@ -38,7 +38,7 @@ const ContactPage = () => {
               E-mail
             </label>
             <input
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent outline-none"
               id="grid-password"
               type="email"
               placeholder=""
@@ -54,7 +54,7 @@ const ContactPage = () => {
               Mensaje
             </label>
             <textarea
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent outline-none"
               id="grid-password"
               type="text"
               placeholder=""
@@ -62,7 +62,7 @@ const ContactPage = () => {
 
             <button
               type="button"
-              className="bg-white font-creatoBold text-xl w-full font-bold py-2 px-4 text-black hover:bg-transparent focus:text-white focus:bg-transparent transition-all hover:text-white border border-white active:bg-transparent active:text-white"
+              className="bg-white font-creatoBold text-xl w-full font-bold py-2 px-4 text-black hover:bg-gray-300 focus:bg-gray-300 transition-all  border border-white active:bg-gray-300"
             >
               Enviar
             </button>
