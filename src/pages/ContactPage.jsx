@@ -1,8 +1,8 @@
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen py-28 px-10 gap-10 justify-center flex flex-col items-center screen-contact text-white">
-      <div className="flex flex-col gap-4 w-[35%]">
-        <h2 className="font-creatoBold text-5xl uppercase tracking-wider ">
+    <div className="w-full min-h-screen py-28 px-10 gap-12 justify-center flex flex-col items-center screen-contact text-white">
+      <div className="flex flex-col gap-4 w-[36%]">
+        <h2 className="font-creatoExtrBold text-5xl uppercase tracking-wider ">
           Contacto
         </h2>
         <p className="font-creatoLight tracking-wider text-lg">
@@ -11,7 +11,7 @@ const ContactPage = () => {
         </p>
       </div>
 
-      <form className="w-full max-w-lg py-5 ">
+      <form className="w-full max-w-lg">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
             <label
@@ -21,7 +21,7 @@ const ContactPage = () => {
               Nombre
             </label>
             <input
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
               id="grid-first-name"
               type="text"
               placeholder=""
@@ -38,7 +38,7 @@ const ContactPage = () => {
               E-mail
             </label>
             <input
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
               id="grid-password"
               type="email"
               placeholder=""
@@ -54,14 +54,15 @@ const ContactPage = () => {
               Mensaje
             </label>
             <textarea
-              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent"
+              className="appearance-none block w-full py-3 px-4 mb-3 leading-tight border border-gray-300 bg-transparent focus:bg-dark outline-none"
               id="grid-password"
               type="text"
               placeholder=""
             />
 
             <button
-              className="bg-white font-creatoBold text-xl w-full font-bold py-2 px-4 text-black hover:bg-dark focus:bg-dark transition-all hover:text-white border border-white "
+              type="button"
+              className="bg-white font-creatoBold text-xl w-full font-bold py-2 px-4 text-black hover:bg-transparent focus:text-white focus:bg-transparent transition-all hover:text-white border border-white active:bg-transparent active:text-white"
             >
               Enviar
             </button>

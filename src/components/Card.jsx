@@ -4,8 +4,8 @@ const Card = ({ price }) => {
   return (
     <div className="card">
       <div className="header">
-        <span className="title font-creatoBold">{price.price}</span>
-        <span className="price font-creatoExtrBold tracking-wider">{price.title}</span>
+        <span className="card-price font-creatoBold">{price.price}</span>
+        <span className="card-title font-creatoExtrBold tracking-wider">{price.title}</span>
       </div>
       <p className="desc font-creatoBold text-red-600 text-xl tracking-wide">
         {price.center}
