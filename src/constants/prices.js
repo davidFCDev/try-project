@@ -49,7 +49,7 @@ export const PRICES = {
     {
       id: 5,
       center: "TRY Fitness Zenter",
-      title: "BASIC",
+      title: "BRONZE",
       price: "40 €",
       subtitle: "2 clases / semana",
       description: ["2 clases / semana", "Acceso libre a sala en Try Zenter"],
@@ -57,7 +57,7 @@ export const PRICES = {
     {
       id: 6,
       center: "TRY Fitness Zenter",
-      title: "LITE",
+      title: "SILVER",
       price: "55 €",
       subtitle: "3 clases / semana",
       description: ["3 clases / semana", "Acceso libre a sala en Try Zenter"],
@@ -65,7 +65,7 @@ export const PRICES = {
     {
       id: 7,
       center: "TRY Fitness Zenter",
-      title: "PREMIUM",
+      title: "GOLD",
       price: "70 €",
       subtitle: "Clases ilimitadas",
       description: ["Clases ilimitadas", "Acceso libre a sala en Try Zenter"],
