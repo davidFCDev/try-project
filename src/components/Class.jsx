@@ -25,12 +25,12 @@ const Class = () => {
         <h2 className="font-creatoExtrBold text-6xl uppercase tracking-wider">
           Nuestras clases
         </h2>
-        <p className="font-creatoLight text-2xl">
+        <p className="font-creatoLight text-2xl tracking-wider">
         Ya busques mejorar tu resistencia, desarrollar tu fuerza o perfeccionar tus habilidades gimnásticas, tenemos la clase perfecta para ti.
         </p>
         <Link
           to="/timetable"
-          className="font-creatoExtrBold border border-black text-white bg-black hover:bg-white hover:text-black px-3 py-2 transition-all tracking-wider"
+          className="font-creatoExtrBold border border-black text-white bg-black hover:bg-white hover:text-black px-6 py-3 transition-all tracking-widest uppercase text-sm"
         >
           Ver horarios
         </Link>

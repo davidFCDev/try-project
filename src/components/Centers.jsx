@@ -2,6 +2,7 @@ import SliderArenal from "./SliderArenal";
 import SliderZenter from "./SliderZenter";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import "./centers.css";
 
 const Centers = () => {
   const animationOptions = {
@@ -24,15 +25,15 @@ const Centers = () => {
           className="flex flex-col gap-6 max-w-[30%]"
           ref={ref1}
         >
-          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wide">
+          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wider title">
             <span className="text-red-600">TRY</span> BOX ARENAL
           </h2>
           <p className="text-lg font-creatoThin italic">
             Rúa do Areal, 140, 36201 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creatoLight tracking-wide">
-            Espacio en el interior del Gimnasio Arenal. WOD, dndurance o ven
-            directamente a Open Box y decide tú!
+          <p className="text-xl font-creatoLight tracking-wider">
+            Espacio en el interior del Gimnasio Arenal. Clases de WOD, endurance
+            o ven directamente a Open Box y decide tú!
           </p>
         </motion.div>
       </div>
@@ -46,13 +47,13 @@ const Centers = () => {
           animate={inView2 ? animationOptions : {}}
           ref={ref2}
         >
-          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wide">
+          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wider title">
             <span className="text-red-600">TRY</span> ZENTER
           </h2>
           <p className="text-lg font-creatoThin italic">
             Estrada Fragosiño, 30, 36214 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creatoLight tracking-wide">
+          <p className="text-xl font-creatoLight tracking-wider">
             Espacio en el interior de Twelve Center. Clases de Try45, aerial y
             específicos para pádel.
           </p>

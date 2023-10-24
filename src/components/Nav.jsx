@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <nav className="w-full px-6 md:px-20 py-5 flex justify-between items-center bg-white fixed shadow-md z-50">
-      <Link className="text-2xl md:text-3xl font-creatoLight tracking-[4px] sm:tracking-[8px]">
+      <Link className="text-2xl md:text-4xl font-creatoLight tracking-[4px] sm:tracking-[8px]">
         <strong className="font-creatoBold">
           <span className="text-red-600">T</span>RY
         </strong>{" "}
@@ -69,28 +69,25 @@ const Nav = () => {
               transition={{ duration: 0.5 }}
               className="px-2 py-20 bg-dimWhite absolute top-[4.4rem] right-[0rem] min-w-[100px] h-screen rounded font-creatoBold uppercase"
             >
-              <ul className="list-none flex gap-2 justify-end items-center flex-1 flex-col tracking-widest text-sm">
-                <Link to={"/"} className="text-center px-6 py-2 hover-underline">
+              <ul className="list-none flex gap-2 justify-end flex-1 flex-col tracking-widest text-sm">
+                <Link to={"/"} className="px-6 py-2 hover-underline hover-underline">
                   Inicio
                 </Link>
-                <Link to={"/timetable"} className="text-center px-6 py-2">
+                <Link to={"/timetable"} className="px-6 py-2 hover-underline">
                   Horarios
                 </Link>
-                <Link to={"/prices"} className="text-center px-6 py-2">
+                <Link to={"/prices"} className="px-6 py-2 hover-underline">
                   Tarifas
                 </Link>
                 <a
                   href="https://www.instagram.com/tryfitness._/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-center px-6 py-2"
+                  className="px-6 py-2 hover-underline"
                 >
                   Instagram
                 </a>
-                <Link
-                  to={"/contact"}
-                  className="text-center px-6 py-2"
-                >
+                <Link to={"/contact"} className="px-6 py-2 hover-underline">
                   Contacto
                 </Link>
               </ul>

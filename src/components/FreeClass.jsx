@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const FreeClass = () => {
   const animationOptions = {
@@ -14,22 +15,20 @@ const FreeClass = () => {
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className="w-[45%] flex flex-col gap-5 px-20"
+        className="w-[48%] flex flex-col gap-5 px-20"
         ref={ref}
       >
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
           Tu primera clase es gratis
         </h2>
-        <p className="font-creatoLight text-2xl flex items-center">
+        <p className="font-creatoLight text-2xl flex items-center tracking-wider">
           Contacta con nosotros y ven a
-          <a
-            href="#"
-            target="_blank"
-            rel="noreferrer"
-            className="ml-2 font-creatoMedium bg-black text-white px-2 py-1 rounded-md hover:bg-white hover:text-black transition duration-300 ease-in-out"
+          <Link
+            to="/contact"
+            className="ml-2 font-creatoBold bg-black text-white px-4 py-1 hover:bg-white hover:text-black transition duration-300 ease-in-out"
           >
             probar
-          </a>
+          </Link>
         </p>
       </motion.div>
     </div>

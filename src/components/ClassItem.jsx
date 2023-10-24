@@ -27,12 +27,12 @@ const ClassItem = ({ item }) => {
         className="flex flex-col items-start justify-center gap-5 px-8 "
         key={item.id}
       >
-        <h3 className="flex text-4xl uppercase font-creatoExtrBold tracking-wider">
+        <h3 className="flex text-4xl uppercase font-creatoExtrBold tracking-wider bg-black text-white px-2">
           {item.title.first}
           <p className="text-red-600">{item.title.red}</p>
           {item.title.end}
         </h3>
-        <p className="text-xl font-creatoLight tracking-wide">{item.subtitle}</p>
+        <p className="text-xl font-creatoLight tracking-wider">{item.subtitle}</p>
         <Link to={`class/${item.id}`} className="font-creatoLight text-lg">
           <button className="learn-more">
             <span className="circle" aria-hidden="true">

@@ -21,7 +21,7 @@ const About = () => {
         <h2 className="font-creatoBold text-6xl uppercase tracking-wider">
           Descubre nuestros dos centros en Vigo
         </h2>
-        <p className="font-creatoLight tracking-wide text-2xl">
+        <p className="font-creatoLight tracking-wider text-2xl">
           Dos espacios de entrenamiento distintos, para que puedas elegir el que más se adapte a ti.
         </p>
       </motion.div>
