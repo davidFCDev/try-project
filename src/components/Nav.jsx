@@ -14,8 +14,8 @@ const Nav = () => {
 
   return (
     <nav className="w-full px-6 md:px-20 py-5 flex justify-between items-center bg-white fixed shadow-md z-50">
-      <Link className="text-2xl md:text-4xl font-creatoLight tracking-[4px] sm:tracking-[8px]">
-        <strong className="font-creatoBold">
+      <Link className="text-2xl md:text-[2.4rem] font-creatoLight tracking-[4px] sm:tracking-[8px] flex items-baseline gap-4">
+        <strong className="font-creatoExtrBold">
           <span className="text-red-600">T</span>RY
         </strong>{" "}
         FITNESS

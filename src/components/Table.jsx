@@ -23,7 +23,7 @@ const Table = () => {
   }, []);
 
   return (
-    <div className="w-full items-center justify-start flex flex-col gap-10 px-32">
+    <div className="w-full items-center justify-start flex flex-col gap-10 px-32 font-creato">
       {loading ? (
         <p className="text-white text-xl">Cargando horarios...</p>
       ) : error ? (
