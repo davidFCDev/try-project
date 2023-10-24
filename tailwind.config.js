@@ -14,7 +14,7 @@ export default {
       },
       colors: {
         dark: "#262626",
-        dimWhite: "rgba(255, 255, 255, 0.823)",
+        dimWhite: "rgba(255, 255, 255, 0.93)",
       },
     },
   },

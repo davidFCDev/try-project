@@ -33,13 +33,13 @@ const Table = () => {
           <table cellPadding={12} className="w-full border-separate">
             <thead className="text-white bg-dark font-creatoBold border">
               <tr>
-                <th className="border">Hora</th>
-                <th className="border">Lunes</th>
-                <th className="border">Martes</th>
-                <th className="border">Miércoles</th>
-                <th className="border">Jueves</th>
-                <th className="border">Viernes</th>
-                <th className="border">Sábado</th>
+                <th className="border uppercase tracking-wider">Hora</th>
+                <th className="border uppercase tracking-wider">Lunes</th>
+                <th className="border uppercase tracking-wider">Martes</th>
+                <th className="border uppercase tracking-wider">Miércoles</th>
+                <th className="border uppercase tracking-wider">Jueves</th>
+                <th className="border uppercase tracking-wider">Viernes</th>
+                <th className="border uppercase tracking-wider">Sábado</th>
               </tr>
             </thead>
             <tbody className="text-center">

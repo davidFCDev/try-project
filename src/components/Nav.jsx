@@ -67,29 +67,29 @@ const Nav = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="p-5 bg-dimWhite absolute top-[5.4rem] right-[0.8rem] min-w-[100px] rounded font-creatoBold uppercase"
+              className="px-2 py-20 bg-dimWhite absolute top-[4.4rem] right-[0rem] min-w-[100px] h-screen rounded font-creatoBold uppercase"
             >
-              <ul className="list-none flex gap-2 justify-end items-start flex-1 flex-col tracking-widest text-sm">
-                <Link to={"/"} className="bg-dark text-white w-full text-center px-6 py-2">
+              <ul className="list-none flex gap-2 justify-end items-center flex-1 flex-col tracking-widest text-sm">
+                <Link to={"/"} className="text-center px-6 py-2 hover-underline">
                   Inicio
                 </Link>
-                <Link to={"/timetable"} className="bg-dark text-white w-full text-center px-6 py-2">
+                <Link to={"/timetable"} className="text-center px-6 py-2">
                   Horarios
                 </Link>
-                <Link to={"/prices"} className="bg-dark text-white w-full text-center px-6 py-2">
+                <Link to={"/prices"} className="text-center px-6 py-2">
                   Tarifas
                 </Link>
                 <a
                   href="https://www.instagram.com/tryfitness._/"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-dark text-white w-full text-center px-6 py-2"
+                  className="text-center px-6 py-2"
                 >
                   Instagram
                 </a>
                 <Link
                   to={"/contact"}
-                  className="bg-dark text-white w-full text-center px-6 py-2"
+                  className="text-center px-6 py-2"
                 >
                   Contacto
                 </Link>
