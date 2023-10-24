@@ -5,11 +5,13 @@ import Nav from "./components/Nav";
 import PricesPage from "./pages/PricesPage";
 import ContactPage from "./pages/ContactPage";
 import ClassPage from "./pages/ClassPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div>
       <Nav />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/timetable" element={<TimetablePage />} />
