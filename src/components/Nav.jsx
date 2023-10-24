@@ -3,6 +3,7 @@ import "./nav.css";
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ScrollToTopLink from "./ScrollToTopLink";
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
@@ -21,9 +22,9 @@ const Nav = () => {
       </Link>
 
       <div className="hidden sm:flex gap-10 uppercase text-[13px] tracking-[6px] font-creato items-center">
-        <Link to={"/"} className="link underline-hover">
+        <ScrollToTopLink to={"/"} className="link underline-hover">
           Inicio
-        </Link>
+        </ScrollToTopLink>
         <Link to={"/timetable"} className="link underline-hover">
           Horarios
         </Link>
@@ -70,7 +71,10 @@ const Nav = () => {
               className="px-2 py-20 bg-dimWhite absolute top-[4.4rem] right-[0rem] min-w-[100px] h-screen rounded font-creatoBold uppercase"
             >
               <ul className="list-none flex gap-2 justify-end flex-1 flex-col tracking-widest text-sm">
-                <Link to={"/"} className="px-6 py-2 hover-underline hover-underline">
+                <Link
+                  to={"/"}
+                  className="px-6 py-2 hover-underline hover-underline"
+                >
                   Inicio
                 </Link>
                 <Link to={"/timetable"} className="px-6 py-2 hover-underline">

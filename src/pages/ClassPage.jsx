@@ -11,11 +11,9 @@ const ClassPage = () => {
     return <div>Clase no encontrada</div>;
   }
 
-  console.log(selectedClass);
-
   return (
     <div className="w-full min-h-screen pt-16 justify-center flex text-white">
-      <div className="flex flex-col justify-center items-start px-14 gap-10 w-[55%] bg-dark border-r-2 border-black">
+      <div className="flex flex-col justify-center items-start px-14 gap-10 w-[55%] bg-dark">
         <h2 className="title font-creatoExtrBold text-6xl uppercase tracking-wider bg-red-600 px-2 py-1">
           {selectedClass.title.first}
           {selectedClass.title.red}
