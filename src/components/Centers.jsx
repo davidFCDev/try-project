@@ -19,7 +19,7 @@ const Centers = () => {
       id="centros"
       className="w-full flex flex-col gap-10 sm:gap-10 py-10 sm:py-16"
     >
-      <div className="flex flex-col-reverse sm:flex-row items-center gap-10 sm:gap-16 bg-dark text-white pt-10">
+      <div className="flex flex-col-reverse sm:flex-row items-center gap-10 sm:gap-16 bg-dark text-white pt-10 sm:pt-0">
         <SliderArenal />
 
         <motion.div
@@ -41,7 +41,7 @@ const Centers = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col-reverse sm:flex-row-reverse justify-start items-center gap-10 sm:gap-16 sm:text-right bg-dark text-white pt-10">
+      <div className="flex flex-col-reverse sm:flex-row-reverse justify-start items-center gap-10 sm:gap-16 sm:text-right bg-dark text-white pt-10 sm:pt-0">
         <SliderZenter />
 
         <motion.div
