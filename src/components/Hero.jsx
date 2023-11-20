@@ -9,14 +9,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full min-h-screen screen flex justify-center items-end py-[5rem]">
+    <div className="w-full min-h-screen screen flex justify-center items-end py-[5rem] px-6">
       <div className="">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={animationOptions}
-          className="text-[90px] text-white font-creatoBold tracking-wider"
+          className="text-[50px] sm:text-[90px] text-white font-creatoBold tracking-wider"
         >
-          TRY <span className="font-creatoLight bg-black">AGAIN,</span> FAIL{" "}
+          TRY <span className="font-creatoLight bg-black pr-10 sm:pr-0">AGAIN,</span> FAIL{" "}
           <span className="font-creatoLight bg-black">BETTER</span>
         </motion.h1>
       </div>

@@ -18,7 +18,7 @@ const TimetablePage = () => {
           </div>
         </div>
       </div>
-      <Table />
+      <Table/>
     </div>
   );
 };

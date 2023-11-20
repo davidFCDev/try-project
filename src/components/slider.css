@@ -1,11 +1,33 @@
 .swiper-button-next {
-  color: white; /* Cambia el color deseado */
+  color: white;
+  right: 5px;
 }
 
 .swiper-button-prev {
-  color: white; /* Cambia el color deseado */
+  color: white;
+  left: 5px;
 }
 
 .swiper-pagination-bullet {
-  background: white; /* Cambia el color deseado */
+  background: white;
 }
+
+
+/* Estilos para pantallas móviles (hasta 767px, ajusta según tus necesidades) */
+@media screen and (max-width: 767px) {
+  .swiper-button-next {
+    color: white;
+    right: 2px;
+  }
+  
+  .swiper-button-prev {
+    color: white;
+    left: 2px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: transparent;
+  }
+}
+
+

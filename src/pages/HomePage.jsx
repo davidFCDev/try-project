@@ -1,8 +1,8 @@
 import About from "../components/About";
 import Centers from "../components/Centers";
-import Class from "../components/Class";
-import Footer from "../components/Footer";
-import FreeClass from "../components/FreeClass";
+// import Class from "../components/Class";
+// import Footer from "../components/Footer";
+// import FreeClass from "../components/FreeClass";
 import Hero from "../components/Hero";
 
 const HomePage = () => {
@@ -11,9 +11,9 @@ const HomePage = () => {
       <Hero />
       <About />
       <Centers />
-      <Class />
+      {/* <Class />
       <FreeClass />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

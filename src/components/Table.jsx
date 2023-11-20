@@ -10,13 +10,11 @@ const Table = () => {
     getTimetable()
       .then((data) => {
         setTimetable(data);
-        console.log(data);
         setLoading(false);
       })
       .catch((error) => {
         setError(
-          "Error al cargar el horario. Inténtalo de nuevo más tarde.",
-          error
+          `Error al cargar el horario. Inténtalo de nuevo más tarde. Detalles: ${error.message}`
         );
         setLoading(false);
       });
@@ -45,13 +43,20 @@ const Table = () => {
             <tbody className="text-center">
               {timetable.map((item, index) => (
                 <tr key={index} className="font-creatoBold">
-                  <td className={`border border-slate-400 ${item[1] === 'WOD' || item[1] === 'ENDURANCE' ? 'bg-red-200' : item[1] === 'TRY45' || item[1] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[1]}</td>
-                  <td className={`border border-slate-400 ${item[2] === 'WOD' || item[2] === 'ENDURANCE' ? 'bg-red-200' : item[2] === 'TRY45' || item[2] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[2]}</td>
-                  <td className={`border border-slate-400 ${item[3] === 'WOD' || item[3] === 'ENDURANCE' ? 'bg-red-200' : item[3] === 'TRY45' || item[3] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[3]}</td>
-                  <td className={`border border-slate-400 ${item[4] === 'WOD' || item[4] === 'ENDURANCE' ? 'bg-red-200' : item[4] === 'TRY45' || item[4] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[4]}</td>
-                  <td className={`border border-slate-400 ${item[5] === 'WOD' || item[5] === 'ENDURANCE' ? 'bg-red-200' : item[5] === 'TRY45' || item[5] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[5]}</td>
-                  <td className={`border border-slate-400 ${item[6] === 'WOD' || item[6] === 'ENDURANCE' ? 'bg-red-200' : item[6] === 'TRY45' || item[6] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[6]}</td>
-                  <td className={`border border-slate-400 ${item[7] === 'WOD' || item[7] === 'ENDURANCE' ? 'bg-red-200' : item[7] === 'TRY45' || item[7] === 'AERIAL' ? 'bg-blue-100' : ''}`}>{item[7]}</td>
+                  {Object.keys(item).map((hora, subIndex) => (
+                    <td
+                      key={subIndex}
+                      className={`border border-slate-400 ${
+                        item[hora] === "WOD" || item[hora] === "ENDURANCE"
+                          ? "bg-red-200"
+                          : item[hora] === "TRY45" || item[hora] === "AERIAL"
+                          ? "bg-blue-100"
+                          : ""
+                      }`}
+                    >
+                      {item[hora]}
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>

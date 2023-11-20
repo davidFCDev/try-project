@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./nav.css";
 import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -6,10 +6,19 @@ import { motion } from "framer-motion";
 import ScrollToTopLink from "./ScrollToTopLink";
 
 const Nav = () => {
+  const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
+  };
+
+  const handleLinkClick = (path) => {
+    handleToggle();
+
+    setTimeout(() => {
+      navigate(path);
+    }, 300);
   };
 
   return (
@@ -22,13 +31,25 @@ const Nav = () => {
       </Link>
 
       <div className="hidden sm:flex gap-10 uppercase text-[13px] tracking-[6px] font-creato items-center">
-        <ScrollToTopLink to={"/"} className="link underline-hover">
+        <ScrollToTopLink
+          to={"/"}
+          className="link underline-hover"
+          onClick={() => handleLinkClick("/")}
+        >
           Inicio
         </ScrollToTopLink>
-        <Link to={"/timetable"} className="link underline-hover">
+        <Link
+          to={"/timetable"}
+          className="link underline-hover"
+          onClick={() => handleLinkClick("/timetable")}
+        >
           Horarios
         </Link>
-        <Link to={"/prices"} className="link underline-hover">
+        <Link
+          to={"/prices"}
+          className="link underline-hover"
+          onClick={() => handleLinkClick("/prices")}
+        >
           Tarifas
         </Link>
         <a
@@ -68,21 +89,26 @@ const Nav = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="px-2 py-20 bg-dimWhite absolute top-[4.4rem] right-[0rem] min-w-[100px] h-screen rounded font-creatoBold uppercase"
+              className="px-10 py-28 bg-black text-white flex flex-col items-center absolute top-[4.65rem] right-0 min-w-[100px] h-screen rounded font-creato uppercase"
             >
-              <ul className="list-none flex gap-2 justify-end flex-1 flex-col tracking-widest text-sm">
+              <ul className="list-none flex gap-5 justify-start h-full items-center flex-1 flex-col tracking-widest text-xs">
                 <Link
                   to={"/"}
                   className="px-6 py-2 hover-underline hover-underline"
                 >
                   Inicio
                 </Link>
+                <hr className="border-neutral-500 border w-full"/>
                 <Link to={"/timetable"} className="px-6 py-2 hover-underline">
                   Horarios
                 </Link>
+                <hr className="border-neutral-500 border w-full"/>
+
                 <Link to={"/prices"} className="px-6 py-2 hover-underline">
                   Tarifas
                 </Link>
+                <hr className="border-neutral-500 border w-full"/>
+
                 <a
                   href="https://www.instagram.com/tryfitness._/"
                   target="_blank"
@@ -91,10 +117,14 @@ const Nav = () => {
                 >
                   Instagram
                 </a>
+                <hr className="border-neutral-500 border w-full"/>
+
                 <Link to={"/contact"} className="px-6 py-2 hover-underline">
                   Contacto
                 </Link>
               </ul>
+
+              <img src="/images/snatch.png" alt="snatch" className="w-20 h-20" />
             </motion.div>
           )}
         </AnimatePresence>

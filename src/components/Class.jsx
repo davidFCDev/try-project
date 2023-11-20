@@ -15,11 +15,11 @@ const Class = () => {
   const [ref, inView] = useInView({ threshold: 0.6, triggerOnce: true });
 
   return (
-    <div className="w-full flex flex-col gap-32">
+    <div className="w-full flex flex-col items-center gap-32">
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className="flex flex-col gap-5 w-[35%] items-start px-20"
+        className="flex flex-col gap-5 items-start max-w-xl"
         ref={ref}
       >
         <h2 className="font-creatoExtrBold text-6xl uppercase tracking-wider">

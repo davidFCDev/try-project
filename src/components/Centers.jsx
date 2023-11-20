@@ -16,44 +16,44 @@ const Centers = () => {
 
   return (
     <div id="centros" className="w-full flex flex-col gap-10 py-16">
-      <div className="flex items-center gap-16 bg-dark text-white">
+      <div className="flex flex-col-reverse sm:flex-row items-center gap-10 sm:gap-16 bg-dark text-white py-10 sm:py-0">
         <SliderArenal />
 
         <motion.div
           initial={{ opacity: 0, x: 200 }}
           animate={inView1 ? animationOptions : {}}
-          className="flex flex-col gap-6 max-w-[30%]"
+          className="flex flex-col gap-6 sm:max-w-[30%] px-6 sm:px-0"
           ref={ref1}
         >
-          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wider title">
+          <h2 className="text-6xl sm:text-7xl font-creatoExtrBold uppercase tracking-wider title">
             <span className="text-red-600">TRY</span> BOX ARENAL
           </h2>
           <p className="text-lg font-creatoThin italic">
             Rúa do Areal, 140, 36201 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creatoLight tracking-wider">
+          <p className="text-lg sm:text-xl font-creatoLight tracking-wider">
             Espacio en el interior del Gimnasio Arenal. Clases de WOD, endurance
             o ven directamente a Open Box y decide tú!
           </p>
         </motion.div>
       </div>
 
-      <div className="flex flex-row-reverse justify-start items-center gap-16 text-right bg-dark text-white">
+      <div className="flex flex-col-reverse sm:flex-row-reverse justify-start items-center sm:gap-16 sm:text-right bg-dark text-white py-10 sm:py-0">
         <SliderZenter />
 
         <motion.div
-          className="flex flex-col gap-5 max-w-[30%]"
+          className="flex flex-col gap-6 sm:max-w-[30%] px-6 sm:px-0 py-10 sm:py-0"
           initial={{ opacity: 0, x: -200 }}
           animate={inView2 ? animationOptions : {}}
           ref={ref2}
         >
-          <h2 className="text-7xl font-creatoExtrBold uppercase tracking-wider title">
+          <h2 className="text-6xl sm:text-7xl font-creatoExtrBold uppercase tracking-wider title">
             <span className="text-red-600">TRY</span> ZENTER
           </h2>
           <p className="text-lg font-creatoThin italic">
             Estrada Fragosiño, 30, 36214 Vigo, Pontevedra
           </p>
-          <p className="text-xl font-creatoLight tracking-wider">
+          <p className="text-lg sm:text-xl font-creatoLight tracking-wider">
             Espacio en el interior de Twelve Center. Clases de Try45, aerial y
             específicos para pádel.
           </p>
