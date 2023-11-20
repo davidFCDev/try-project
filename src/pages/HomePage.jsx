@@ -1,6 +1,6 @@
 import About from "../components/About";
 import Centers from "../components/Centers";
-// import Class from "../components/Class";
+import Class from "../components/Class";
 // import Footer from "../components/Footer";
 // import FreeClass from "../components/FreeClass";
 import Hero from "../components/Hero";
@@ -11,8 +11,8 @@ const HomePage = () => {
       <Hero />
       <About />
       <Centers />
-      {/* <Class />
-      <FreeClass />
+      <Class />
+      {/* <FreeClass />
       <Footer /> */}
     </div>
   );

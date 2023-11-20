@@ -13,7 +13,7 @@ import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 const SliderArenal = () => {
   return (
-    <div className="w-full sm:w-[60%]">
+    <div className="w-full sm:w-[60%] overflow-x-hidden">
       <Swiper
         spaceBetween={30}
         effect={"fade"}
@@ -22,7 +22,7 @@ const SliderArenal = () => {
           clickable: true,
         }}
         modules={[EffectFade, Navigation, Pagination]}
-        className="sm:h-[500px] overflow-x-hidden"
+        className="sm:h-[500px]"
       >
         <SwiperSlide>
           <img src="/images/arenal1.webp" alt="imagen arenal1" />
