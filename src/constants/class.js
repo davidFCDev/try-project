@@ -1,7 +1,7 @@
 export const CLASS = [
   {
     id: 1,
-    style: "flex",
+    style: "flex flex-col sm:flex-row gap-10 sm:gap-0",
     initial: { opacity: 0, x: 50 },
     title: {
       red: "W",
@@ -15,7 +15,7 @@ export const CLASS = [
   },
   {
     id: 2,
-    style: "flex flex-row-reverse",
+    style: "flex flex-col sm:flex-row-reverse gap-10 sm:gap-0",
     initial: { opacity: 0, x: -50 },
     title: {
       first: "END",
@@ -30,7 +30,7 @@ export const CLASS = [
   },
   {
     id: 3,
-    style: "flex",
+    style: "flex flex-col sm:flex-row gap-10 sm:gap-0",
     initial: { opacity: 0, x: 50 },
     capital: "T",
     title: {
@@ -45,7 +45,7 @@ export const CLASS = [
   },
   {
     id: 4,
-    style: "flex flex-row-reverse",
+    style: "flex flex-col sm:flex-row-reverse gap-10 sm:gap-0",
     initial: { opacity: 0, x: -50 },
     title: {
       first: "A",
@@ -60,7 +60,7 @@ export const CLASS = [
   },
   {
     id: 5,
-    style: "flex",
+    style: "flex flex-col sm:flex-row gap-10 sm:gap-0",
     initial: { opacity: 0, x: 50 },
     title: {
       red: "O",

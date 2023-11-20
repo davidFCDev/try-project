@@ -19,13 +19,13 @@ const Class = () => {
       <motion.div
         animate={inView ? animationOptions : {}}
         initial={{ opacity: 0, y: 50 }}
-        className="flex flex-col gap-5 items-start max-w-xl"
+        className="flex flex-col gap-5 items-start sm:max-w-xl px-6 sm:px-0"
         ref={ref}
       >
-        <h2 className="font-creatoExtrBold text-6xl uppercase tracking-wider">
+        <h2 className="font-creatoBold text-4xl sm:text-6xl uppercase tracking-wider">
           Nuestras clases
         </h2>
-        <p className="font-creatoLight text-2xl tracking-wider">
+        <p className="font-creatoLight tracking-wider text-lg sm:text-2xl">
         Ya busques mejorar tu resistencia, desarrollar tu fuerza o perfeccionar tus habilidades gimnásticas, tenemos la clase perfecta para ti.
         </p>
         <Link
@@ -36,7 +36,7 @@ const Class = () => {
         </Link>
       </motion.div>
 
-      <div className="flex flex-col py-16 gap-10 w-full justify-around">
+      <div className="flex flex-col py-4 sm:py-16 gap-20 sm:gap-10 w-full justify-around">
         {CLASS.map((item) => (
           <ClassItem key={item.id} item={item} />
         ))}

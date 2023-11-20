@@ -15,14 +15,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-dark text-gray-100 w-full pt-14 pb-10 flex flex-col gap-40 font-creatoLight tracking-wider ">
-      <ul className="flex justify-around">
+    <footer className="bg-dark text-gray-100 w-full pt-14 pb-10 flex flex-col gap-24 sm:gap-40 font-creatoLight tracking-wider px-6 sm:px-0">
+      <ul className="sm:flex grid grid-cols-2 justify-around gap-10 sm:gap-0">
         <li className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-creatoBold">UBICACIÓN</h2>
+            <h2 className="text-base sm:text-xl font-creatoBold">UBICACIÓN</h2>
             <MdLocationOn className="text-md sm:text-xl" />
           </div>
           <a
+            className="text-xs sm:text-base"
             href="https://goo.gl/maps/d1PUZHKSqzoqhWrd8"
             target="_blank"
             onClick={(event) => {
@@ -37,6 +38,7 @@ const Footer = () => {
             Arenal Box: <span>Rúa do Areal, 140, 36201 Vigo, Pontevedra</span>
           </a>
           <a
+            className="text-xs sm:text-base"
             href="https://goo.gl/maps/nfzy9RUETPPxd8Zx7"
             target="_blank"
             onClick={(event) => {
@@ -53,27 +55,27 @@ const Footer = () => {
         </li>
         <li className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-creatoBold">HORA. GYM</h2>
+            <h2 className="text-base sm:text-xl font-creatoBold">HORA. GYM</h2>
             <FaRegClock className="text-md sm:text-xl" />
           </div>
-          <p>L-V: 6:15am - 23pm</p>
-          <p>S-D: 9am - 14pm</p>
+          <p className="text-xs sm:text-base">L-V: 6:15am - 23pm</p>
+          <p className="text-xs sm:text-base">S-D: 9am - 14pm</p>
         </li>
         <li className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-creatoBold">TELÉFONO</h2>
+            <h2 className="text-base sm:text-xl font-creatoBold">TELÉFONO</h2>
             <MdOutlinePhoneAndroid className="text-md sm:text-xl" />
           </div>
-          <p>Arenal: 666765432</p>
-          <p>Zenter: 666123456</p>
+          <p className="text-xs sm:text-base">Arenal: 666765432</p>
+          <p className="text-xs sm:text-base">Zenter: 666123456</p>
         </li>
         <li className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-creatoBold">SOCIAL</h2>
+            <h2 className="text-base sm:text-xl font-creatoBold">SOCIAL</h2>
             <BiLike className="text-md sm:text-xl" />
           </div>
           <a
-            className="flex items-center gap-2 hover:underline"
+            className="flex items-center gap-2 hover:underline text-xs sm:text-base"
             href="https://www.instagram.com/tryfitness._/"
             target="_blank"
             onClick={(event) => {
@@ -89,7 +91,7 @@ const Footer = () => {
             <GrInstagram />
           </a>
           <a
-            className="flex items-center gap-2 hover:underline"
+            className="flex items-center gap-2 hover:underline text-xs sm:text-base"
             href="https://www.facebook.com/tryfitnessboxzenter"
             target="_blank"
             onClick={(event) => {
@@ -121,7 +123,7 @@ const Footer = () => {
               }}
               className="hover:underline"
             >
-              <p>Aviso legal</p>
+              <p className="text-xs sm:text-base">Aviso legal</p>
             </Link>
           </li>
           <li>
@@ -140,7 +142,7 @@ const Footer = () => {
               }}
               className="hover:underline"
             >
-              <p>Pol. de privacidad</p>
+              <p className="text-xs sm:text-base">Pol. de privacidad</p>
             </Link>
           </li>
           <li>
@@ -157,15 +159,15 @@ const Footer = () => {
               }}
               className="hover:underline"
             >
-              <p>Pol. de cookies</p>
+              <p className="text-xs sm:text-base">Pol. de cookies</p>
             </Link>
           </li>
         </ul>
         <p id="portfolio">
           <a
+            className="text-xs sm:text-base hover:text-white"
             target="_blank"
             href="https://personal-virtualfolio.netlify.app/#portfolio"
-            className="hover:text-white"
             rel="noreferrer"
           >
             developed by <span>davidFC</span>
