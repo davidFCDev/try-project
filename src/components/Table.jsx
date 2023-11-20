@@ -21,23 +21,37 @@ const Table = () => {
   }, []);
 
   return (
-    <div className="w-full items-center justify-start flex flex-col gap-10 px-32 font-creato">
+    <div className="w-full items-center justify-start flex flex-col font-creato">
       {loading ? (
         <p className="text-white text-xl">Cargando horarios...</p>
       ) : error ? (
         <p className="text-white">{error}</p>
       ) : (
-        <div className="bg-gray-200 w-full shadow-md shadow-gray-600">
-          <table cellPadding={12} className="w-full border-separate">
+        <div className="bg-gray-200 w-full shadow-md shadow-gray-600 overflow-x-scroll">
+          <table cellPadding={8} className="w-full border-separate">
             <thead className="text-white bg-dark font-creatoBold border">
               <tr>
-                <th className="border uppercase tracking-wider">Hora</th>
-                <th className="border uppercase tracking-wider">Lunes</th>
-                <th className="border uppercase tracking-wider">Martes</th>
-                <th className="border uppercase tracking-wider">Miércoles</th>
-                <th className="border uppercase tracking-wider">Jueves</th>
-                <th className="border uppercase tracking-wider">Viernes</th>
-                <th className="border uppercase tracking-wider">Sábado</th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Hora
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Lunes
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Martes
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Miércoles
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Jueves
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Viernes
+                </th>
+                <th className="border uppercase tracking-wider text-sm sm:text-lg">
+                  Sábado
+                </th>
               </tr>
             </thead>
             <tbody className="text-center">

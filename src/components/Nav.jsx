@@ -31,25 +31,13 @@ const Nav = () => {
       </Link>
 
       <div className="hidden sm:flex gap-10 uppercase text-[13px] tracking-[6px] font-creato items-center">
-        <ScrollToTopLink
-          to={"/"}
-          className="link underline-hover"
-          onClick={() => handleLinkClick("/")}
-        >
+        <ScrollToTopLink to={"/"} className="link underline-hover">
           Inicio
         </ScrollToTopLink>
-        <Link
-          to={"/timetable"}
-          className="link underline-hover"
-          onClick={() => handleLinkClick("/timetable")}
-        >
+        <Link to={"/timetable"} className="link underline-hover">
           Horarios
         </Link>
-        <Link
-          to={"/prices"}
-          className="link underline-hover"
-          onClick={() => handleLinkClick("/prices")}
-        >
+        <Link to={"/prices"} className="link underline-hover">
           Tarifas
         </Link>
         <a
@@ -89,25 +77,34 @@ const Nav = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="px-10 py-28 bg-black text-white flex flex-col items-center absolute top-[4.65rem] right-0 min-w-[100px] h-screen rounded font-creato uppercase"
+              className="px-10 py-28 bg-dark border-l border-neutral-500 text-white flex flex-col items-center absolute top-[4.65rem] right-0 min-w-[100px] h-screen rounded font-creato uppercase"
             >
               <ul className="list-none flex gap-5 justify-start h-full items-center flex-1 flex-col tracking-widest text-xs">
                 <Link
                   to={"/"}
                   className="px-6 py-2 hover-underline hover-underline"
+                  onClick={() => handleLinkClick("/")}
                 >
                   Inicio
                 </Link>
-                <hr className="border-neutral-500 border w-full"/>
-                <Link to={"/timetable"} className="px-6 py-2 hover-underline">
+                <hr className="border-neutral-500 border w-full" />
+                <Link
+                  onClick={() => handleLinkClick("/timetable")}
+                  to={"/timetable"}
+                  className="px-6 py-2 hover-underline"
+                >
                   Horarios
                 </Link>
-                <hr className="border-neutral-500 border w-full"/>
+                <hr className="border-neutral-500 border w-full" />
 
-                <Link to={"/prices"} className="px-6 py-2 hover-underline">
+                <Link
+                  onClick={() => handleLinkClick("/prices")}
+                  to={"/prices"}
+                  className="px-6 py-2 hover-underline"
+                >
                   Tarifas
                 </Link>
-                <hr className="border-neutral-500 border w-full"/>
+                <hr className="border-neutral-500 border w-full" />
 
                 <a
                   href="https://www.instagram.com/tryfitness._/"
@@ -117,14 +114,22 @@ const Nav = () => {
                 >
                   Instagram
                 </a>
-                <hr className="border-neutral-500 border w-full"/>
+                <hr className="border-neutral-500 border w-full" />
 
-                <Link to={"/contact"} className="px-6 py-2 hover-underline">
+                <Link
+                  onClick={() => handleLinkClick("/contact")}
+                  to={"/contact"}
+                  className="px-6 py-2 hover-underline"
+                >
                   Contacto
                 </Link>
               </ul>
 
-              <img src="/images/snatch.png" alt="snatch" className="w-20 h-20" />
+              <img
+                src="/images/snatch.png"
+                alt="snatch"
+                className="w-20 h-20"
+              />
             </motion.div>
           )}
         </AnimatePresence>

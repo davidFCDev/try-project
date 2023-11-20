@@ -1,11 +1,11 @@
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen py-28 px-10 gap-12 justify-center flex flex-col items-center bg-dark text-white">
-      <div className="flex flex-col gap-4 w-[36%]">
-        <h2 className="font-creatoExtrBold text-5xl uppercase tracking-wider ">
+    <div className="w-full min-h-screen py-28 px-6 sm:px-10 gap-12 justify-center flex flex-col items-center bg-dark text-white">
+      <div className="flex flex-col gap-4 sm:max-w-[36%]">
+        <h2 className="font-creatoExtrBold text-4xl sm:text-5xl uppercase tracking-wider text-white text-center sm:text-left">
           Contacto
         </h2>
-        <p className="font-creatoLight tracking-wider text-lg">
+        <p className="font-creatoLight tracking-wider text-sm sm:text-base">
           Tanto si tienes alguna duda como si quieres tu primera clase gratis,
           háznoslo saber!
         </p>
