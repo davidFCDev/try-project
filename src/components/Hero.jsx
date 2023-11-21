@@ -14,7 +14,7 @@ const Hero = () => {
         <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={animationOptions}
-          className="text-[50px] sm:text-[90px] text-white font-creatoBold tracking-wider"
+          className="text-[60px] sm:text-[90px] text-white font-creatoBold tracking-wider"
         >
           TRY <span className="font-creatoLight bg-black pr-10 sm:pr-0">AGAIN,</span> FAIL{" "}
           <span className="font-creatoLight bg-black">BETTER</span>

@@ -17,7 +17,7 @@ const Centers = () => {
   return (
     <div
       id="centros"
-      className="w-full flex flex-col gap-10 sm:gap-10 py-10 sm:py-16"
+      className="w-full flex flex-col gap-20 sm:gap-10 py-10 sm:py-16"
     >
       <div className="flex flex-col-reverse sm:flex-row items-center gap-10 sm:gap-16 bg-dark text-white pt-10 sm:pt-0">
         <SliderArenal />
