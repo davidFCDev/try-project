@@ -109,7 +109,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center gap-3">
         <ul className="flex gap-4">
           <li>
             <Link
@@ -163,6 +163,7 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
+        <hr className="border w-60 opacity-50"/>
         <p id="portfolio">
           <a
             className="text-xs sm:text-base hover:text-white"

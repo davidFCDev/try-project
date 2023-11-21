@@ -77,7 +77,7 @@ const Nav = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.5 }}
-              className="px-10 py-28 bg-dark border-l border-neutral-500 text-white flex flex-col items-center absolute top-[4.65rem] right-0 min-w-[100px] h-screen rounded font-creato uppercase"
+              className="px-10 py-28 bg-white shadow flex flex-col items-center absolute top-[4.65rem] right-0 min-w-[100px] h-screen rounded font-creato uppercase"
             >
               <ul className="list-none flex gap-5 justify-start h-full items-center flex-1 flex-col tracking-widest text-xs">
                 <Link
@@ -87,7 +87,7 @@ const Nav = () => {
                 >
                   Inicio
                 </Link>
-                <hr className="border-neutral-500 border w-full" />
+                <hr className="border-neutral-300 border w-full" />
                 <Link
                   onClick={() => handleLinkClick("/timetable")}
                   to={"/timetable"}
@@ -95,7 +95,7 @@ const Nav = () => {
                 >
                   Horarios
                 </Link>
-                <hr className="border-neutral-500 border w-full" />
+                <hr className="border-neutral-300 border w-full" />
 
                 <Link
                   onClick={() => handleLinkClick("/prices")}
@@ -104,7 +104,7 @@ const Nav = () => {
                 >
                   Tarifas
                 </Link>
-                <hr className="border-neutral-500 border w-full" />
+                <hr className="border-neutral-300 border w-full" />
 
                 <a
                   href="https://www.instagram.com/tryfitness._/"
@@ -114,7 +114,7 @@ const Nav = () => {
                 >
                   Instagram
                 </a>
-                <hr className="border-neutral-500 border w-full" />
+                <hr className="border-neutral-300 border w-full" />
 
                 <Link
                   onClick={() => handleLinkClick("/contact")}
