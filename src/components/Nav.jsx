@@ -61,8 +61,8 @@ const Nav = () => {
       </div>
 
       <aside className="sm:hidden">
-        <div id="menuToggle">
-          <input id="checkbox" type="checkbox" onClick={handleToggle} />
+        <div >
+          <input id="checkbox" type="checkbox" checked={toggle} onClick={handleToggle} />
           <label className="toggle" htmlFor="checkbox">
             <div className="bar bar--top"></div>
             <div className="bar bar--middle"></div>
@@ -124,7 +124,6 @@ const Nav = () => {
                   Contacto
                 </Link>
               </ul>
-
             </motion.div>
           )}
         </AnimatePresence>
